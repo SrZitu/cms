@@ -22,12 +22,11 @@
             <form action="includes/login.php" method="post">
               <div class="form-group">
                 <input type="text" class="form-control" name="username" placeholder="Enter username">
-                </span>
               </div>
               <div class="input-group">
                 <input type="password" class="form-control" name="password" placeholder="Enter Password">
                 <span class="input-group-btn">
-                  <button class="btn btn-primary" type="submit" name="submit">
+                  <button class="btn btn-primary" type="submit" name="login">
                     Submit</button>
                 </span>
               </div>

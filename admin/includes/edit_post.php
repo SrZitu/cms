@@ -53,6 +53,7 @@
 
       $update_post = $conn->query($query);
       confirmQuery($update_post);
+      echo "<p class='bg-success'>post Updated Successfully<a href='../post.php?p_id={$post_id}'>view all post </a></p>";
     }
 
 
@@ -60,6 +61,7 @@
     <form action="" method="POST" enctype="multipart/form-data">
       <div class="form-group">
         <label for="title">Post Title</label>
+        <?php echo $post_id; ?>
         <input value="<?php echo $post_title; ?>" type="text" class="form-control" name="title">
       </div>
 
@@ -104,7 +106,7 @@
 
       <div class="form-group">
         <label for="post_content">Post Content</label>
-        <textarea name="post_content" id="" cols="30" rows="10"><?php echo $post_content; ?>
+        <textarea name="post_content" id="body" cols="30" rows="10"><?php echo $post_content; ?>
        
       </textarea>
       </div>

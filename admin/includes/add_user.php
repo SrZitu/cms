@@ -28,6 +28,7 @@ if (isset($_POST['create_user'])) {
 
     if ($conn->query($sql) === TRUE) {
       $msg = '<div class="alert alert-success col-sm-6 ml-5 mt-2" role="alert"> Added Successfully </div>';
+      
     } else {
       $msg = '<div class="alert alert-danger col-sm-6 ml-5 mt-2" role="alert"> Unable to Add </div>';
       echo "Error: " . $sql . "<br>" . $conn->error;
@@ -88,7 +89,8 @@ if (isset($_POST['create_user'])) {
 
   </div>
   <?php if (isset($msg)) {
-    echo $msg;
+    echo "$msg" . "<a href='users.php' class='btn btn-primary'>View Users</a>" ;
+
   } ?>
 </form>
 <script>
