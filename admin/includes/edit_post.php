@@ -56,7 +56,7 @@
       echo "<p class='bg-success'>post Updated Successfully</p>";
     }
 
-
+///
     ?>
     <form action="" method="POST" enctype="multipart/form-data">
       <div class="form-group">
