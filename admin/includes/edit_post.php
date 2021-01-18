@@ -53,9 +53,9 @@
 
       $update_post = $conn->query($query);
       confirmQuery($update_post);
-      echo "<p class='bg-success'>post Updated Successfully<a href='../post.php?p_id={$post_id}'>view all post </a></p>";
+      echo "<p class='bg-success'>post Updated Successfully</p>";
     }
-
+// <a href='../post.php?p_id={$post_id}'>view all post </a>
 
     ?>
     <form action="" method="POST" enctype="multipart/form-data">
