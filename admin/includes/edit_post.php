@@ -53,7 +53,7 @@
 
       $update_post = $conn->query($query);
       confirmQuery($update_post);
-      echo "<p class='bg-success'>post Updated Successfully</p>";
+        echo "<p class='bg-success'>Post Updated. <a href='../post.php?p_id={$post_id}'>View Post </a> or <a href='posts.php'>Edit More Posts</a></p>";
     }
 
 
