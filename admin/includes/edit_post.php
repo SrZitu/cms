@@ -55,7 +55,7 @@
       confirmQuery($update_post);
       echo "<p class='bg-success'>post Updated Successfully</p>";
     }
-// <a href='../post.php?p_id={$post_id}'>view all post </a>
+
 
     ?>
     <form action="" method="POST" enctype="multipart/form-data">
